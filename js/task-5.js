@@ -15,8 +15,8 @@ btn.style.fontSize = "16px";
 btn.style.letterSpacing = "0.04em";
 
 function handlerClick() {
-  background.style.backgroundColor = getRandomHexColor();
   color.innerHTML = getRandomHexColor();
+  background.style.backgroundColor = color.textContent;
 }
 
 function getRandomHexColor() {
