@@ -4,7 +4,10 @@ const userName = document.querySelector("#name-output");
 input.addEventListener("input", handlerInput);
 
 function handlerInput(event) {
-  if (event.target.value.trim() !== "") {
-    userName.innerHTML = event.target.value;
+  const value = event.target.value.trim();
+  if (value !== "") {
+    userName.textContent = value;
+  } else {
+    userName.textContent = "Anonymous";
   }
 }
